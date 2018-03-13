@@ -34,8 +34,11 @@ This artefact was successfully tested for the following versions:
 
 ```
 • To enable mocking for a API, add a tag name: "mock"
-• The value have the following format: <status>|<mockbakend>
+• The value must have the following format: <status>|<mockup-host>
 • Example: true|http://mockserver:8080/api/v2
+• You may override this setting on per method level
+• This example will disable mock for a specific method: false
+• In case global mockups are disabled, you can turn it on per API method
 ```
 
 ## Bug and Caveats
