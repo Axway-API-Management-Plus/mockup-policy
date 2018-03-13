@@ -3,6 +3,19 @@ This Sample-Policy allows you to control Mockup-Routing for API-Manager using ta
 
 The policy supports Global-API-Level- or API-Method-Level-Mocking. Method-Level-Mocking overrules API-Mock-Settings.
 
+![Mocksetting](https://github.com/Axway-API-Management-Plus/mockup-policy/blob/master/images/Mock-Tag-for-API.png)
+
+For this exmaple the following is looged at runtime:
+```
+No API-Method mock-settings configured
+API-Global mock-settings: true|http://localhost:4010/v2
+No Mocking defined on operation
+Using mockURL: http://localhost:4010/v2; isMocked: true
+```
+And finally the API-Gateway connects to the configured mock-host: http://localhost:4010/v2
+
+You may use Mockup-Servers, like Prism (http://stoplight.io/platform/prism/) from stoplight.io providing you options to run Mock-Servers based on your Swagger-Definitions. 
+
 ## API Management Version Compatibilty
 This artefact was successfully tested for the following versions:
 - V7.5.3
